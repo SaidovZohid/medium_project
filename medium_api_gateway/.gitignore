@@ -1,0 +1,7 @@
+vendor/
+media/
+.env
+.env.docker
+TODO.txt
+
+.vscode/

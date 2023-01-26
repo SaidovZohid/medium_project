@@ -1,0 +1,153 @@
+/* background-color: rgb(0,64,84); */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+	background-color: #fff;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo img {
+	border-radius: 6px !important;
+}
+
+.logo .logo-title {
+	font-size: 22px;
+	font-weight: bolder;
+	color: rgb(92, 225, 230);
+}
+
+.logo .logo-title span {
+	color: rgb(2, 86, 112);
+	margin: 0;
+}
+
+.hero {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+}
+
+.hero-title {
+	color: rgb(2, 86, 112);
+	text-align: center;
+}
+
+.hero-subtitle {
+	font-size: 18px;
+	line-height: 18px;
+	color: rgba(28, 27, 27, 0.7);
+	text-align: center;
+}
+
+.hero-btn {
+	padding: 13px 18px 10px 18px;
+	font-size: 18px;
+	line-height: 18px;
+	background-color: rgb(2, 86, 112);
+	border: none;
+	color: #fff;
+	border-radius: 25px;
+}
+
+.hero-img {
+	margin-top: 50px;
+	max-width: 1000px;
+	width: 100%;
+}
+
+footer {
+	background-color: rgb(2, 86, 112);
+}
+
+.footer {
+	padding: 40px 0px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.footer .social-media {
+	padding: 0px 0px 40px;
+	max-width: 600px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.linkedin,
+.telegram,
+.instagram,
+.facebook,
+.at {
+	width: 80px;
+	height: 80px;
+	background-color: #fff;
+	border-radius: 50%;
+	background-color: rgb(31, 54, 114);
+}
+
+.linkedin a,
+.instagram a,
+.telegram a,
+.facebook a,
+.at a {
+	display: flex;
+	margin: 25px auto !important;
+	text-decoration: none;
+}
+
+.icon {
+	font-size: 32px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.footer-line {
+	max-width: 600px;
+	width: 100%;
+	background-color: rgb(253, 253, 253);
+}
+
+.footer p {
+	margin-top: 40px;
+	font-size: 20px;
+	line-height: 18px;
+text-align: center;
+	color: rgb(255, 255, 255);
+}

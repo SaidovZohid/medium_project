@@ -1,0 +1,6 @@
+[submodule "medium_protos"]
+	path = medium_protos
+	url = git@gitlab.com:medium-project/medium_protos.git
+[submodule "note_protos"]
+	path = note_protos
+	url = git@github.com:SaidovZohid/note_protos.git

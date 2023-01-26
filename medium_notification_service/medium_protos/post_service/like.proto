@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/post_service";
+
+message Like {
+	int64 id  = 1;
+	int64 post_id = 2;
+	int64 user_id = 3;
+	bool status = 4;
+}
+
+message GetLikeRequest {
+    int64 user_id = 1;
+    int64 post_id = 2;
+}
+
+message GetLikesRequest {
+	int64 post_id = 1;
+}
+
+message LikesDislikesCountResponse {
+	int64 likes = 1;   
+    int64 dislikes = 2;
+}

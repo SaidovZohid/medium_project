@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/post_service";
+
+import "like.proto";
+
+service LikeService {
+    rpc CreateOrUpdate(Like) returns (Like) {}
+    rpc Get(GetLikeRequest) returns (Like) {}
+    rpc GetLikesDislikesCount(GetLikesRequest) returns (LikesDislikesCountResponse) {}
+}

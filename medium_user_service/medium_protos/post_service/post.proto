@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/post_service";
+
+message Post {
+    int64 id = 1;
+    string title = 2;
+    string description = 3;
+    string image_url = 4;
+    int64 user_id = 5;
+    int64 category_id = 6;
+    string created_at = 7;
+    string updated_at = 8;
+    int64 views_count = 9;
+}
+
+message GetPostRequest {
+    int64 id = 1;
+}
+
+message GetAllPostResponse {
+	repeated Post posts = 1;
+	int64 count = 2;
+}
+
+message GetPostsParamsReq {
+	int64 limit = 1;     
+	int64 page = 2; 
+	string search   = 3;   
+	int64 user_id = 4;
+	int64 category_id = 5;
+	string sort_by_date = 6;
+}

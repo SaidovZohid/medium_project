@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/post_service";
+
+import "comment.proto";
+import "google/protobuf/empty.proto";
+
+service CommentService {
+    rpc Create(Comment) returns (Comment) {}
+    rpc Update(Comment) returns (Comment) {}
+    rpc Delete(DeleteCommentRequest) returns (google.protobuf.Empty) {}
+    rpc GetAll(GetAllCommentsParamsReq) returns (GetAllCommentsResponse) {}
+}
